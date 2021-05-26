@@ -1,0 +1,118 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables*/
+:root{
+    --bar-height: 79px:
+}
+
+#bar{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+#bar ul{
+    display: flex;
+}
+
+#bar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#bar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+
+
+#bar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-family: serif;
+}
+
+#bar ul li a:hover{
+    color: black;
+    background-color: white; 
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 486px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background: url('/rose.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 77%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* services center*/
+
+#services-conatiner .h-primary center{
+    text-align: center;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid brown;
+    margin: 2px 15px;
+    margin-bottom: 20px;
+    padding: 34px;
+    border-radius: 18px;
+    background-color: rgb(236, 236, 240);
+}
+
+
+#services .box p{
+    font-family: cursive;
+}
+
+#services .box h2{
+    text-align: center;
+}
