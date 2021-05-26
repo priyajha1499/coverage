@@ -1,0 +1,43 @@
+/* navigation section*/
+#bar{
+    flex-direction: column;
+}
+
+#bar ul li a{
+    font-size: 1rem;
+    padding: 0px 7px;      /* to control overflow of images,tables of page*/
+    padding-bottom: 8px;
+}
+
+
+/* home-section*/
+#home {
+    height: 327px;
+    padding: 4px 28px;
+}
+
+#home::before{
+    height: 418px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+
+/* services-section*/
+#services{
+    flex-direction: column;
+}
+
+#services .box {
+    padding: 14px;
+    margin: 2px 0px;
+    margin-bottom: 20px;
+}
+
+
+/* utility classes*/
+.h-primary{
+    font-size: 26px;
+}
